@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang= "pt-br">
+	<head>
+		<title>Encontros Psicologia</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Andersen Facundo, Felipe Augusto e Mateus Aires">
+		<meta name="keywords" content="psicologia, terapia, sao sebastiao, podcast de psicologia, brasilia"/>
+		<meta name="description" content="Serviço de psicoterapia online para todo o Brasil e presencial em São Sebastião - DF. Nossos atendimentos prestados são destinados a pessoas de todas as faixas etárias.">
+		<link rel="stylesheet" href="estilo.css"/>
+		<link rel="shortcut icon" type="imagex/png" href="img/icone-aba.ico">
+	</head>
+
+	<body>
+		<!-- banner -->
+		<section class="hero-section">
+			<div class="container-hero">
+				<header class="hero-header">
+					<div class="social-icons">
+						<a href="https://www.instagram.com/encontrospsicologia/" target="_blank">
+							<img src="img/insta.png" alt="Instagram">
+						</a>
+						<a href="https://open.spotify.com/show/1VGE7nQKSgc5UjqahQ6HP8?si=3f22448e35ff43e9" target="_blank">
+							<img src="img/sptopo.png" alt="Spotify">
+						</a>
+					</div>
+
+					<!-- menu hamburguer, só aparece no mobile -->
+					<div class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<nav class="hero-nav">
+						<ul>
+							<li><a href="#">Início</a></li>
+							<li><a href="#pag-equipe">Equipe</a></li>
+							<li><a href="#pag-espaco">Espaço</a></li>
+							<li><a href="#contato">Contato</a></li>
+							<li><a href="#pag-podcast">Podcast</a></li>
+							<li><a href="#pag-depoimentos">Depoimentos</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1>ENCONTROS<br>PSICOLOGIA</h1>
+						<p>
+							Serviço de psicoterapia online em todo o Brasil e presencial em Brasília, destinado a pessoas de
+							todas as idades. Nosso propósito é democratizar o acesso à psicoterapia com uma visão crítica de
+							sociedade, reconhecendo que cada pessoa está inserida em realidades como etnia, gênero, classe e
+							orientação afetivo-sexual.
+						</p>
+						<a href="#contato" class="btn-cta">Conheça Mais</a>
+					</div>
+				</div>
+
+				<div class="hero-graphics-wrapper">
+					<img src="img/banner.svg" alt="" class="abstract-bg">
+					<img src="img/casal-banner.jpg" alt="Casal sorrindo" class="couple-img">
+				</div>
+    		</div>
+
+			<script>
+				const btnMenu = document.querySelector('.menu-hamburguer');
+				const heroNav = document.querySelector('.hero-nav');
+
+				btnMenu.addEventListener('click', () => {
+					heroNav.classList.toggle('active');
+					btnMenu.classList.toggle('active'); // 🔥 faz virar X
+				});
+
+				// Quando clicar em um link → fecha o menu e volta ao hambúrguer
+				heroNav.querySelectorAll('a').forEach(link => {
+					link.addEventListener('click', () => {
+						heroNav.classList.remove('active');
+						btnMenu.classList.remove('active'); // 🔥 volta para hambúrguer
+					});
+				});
+			</script>
+		</section>
+		
+		<!-- topo -->
+		<div id="topo">
+			<a href="#">
+				<img id="bt-topo" src="img/topo.png">
+			</a>
+		</div>
+
+		<!-- whatsapp-->
+		<a href="https://api.whatsapp.com/send?phone=5561992954182" class="whatsapp-float" target="_blank">
+    		<img src="img/whatsapp.png" alt="WhatsApp">
+		</a>
+
+		<!-- nossa equipe -->
+		<section id="pag-equipe">
+			<div class="equipe-container">
+				<h1 class="titulo-sessao">NOSSA EQUIPE</h1>
+				
+				<div class="equipe-cards">
+					<!-- Card Luana -->
+					<div class="equipe-card">
+						<div class="equipe-foto">
+							<img src="img/luana.jpg" alt="Luana Pessoa">
+						</div>
+						<div class="equipe-info">
+							<h3>LUANA PESSOA</h3>
+							<p>
+								Sou psicóloga clínica e estou me especializando em Terapia Cognitivo-Comportamental e essa é a abordagem que baseio todo o meu trabalho. Atendo adolescentes e adultos a partir dos 15 anos de idade.
+							</p>
+						</div>
+					</div>
+
+					<!-- Card Wana -->
+					<div class="equipe-card">
+						<div class="equipe-foto">
+							<img src="img/wana.png" alt="Wana Lays">
+						</div>
+						<div class="equipe-info">
+							<h3>WANA LAYS</h3>
+							<p>
+								Psicóloga clínica e social. Atendo adolescentes e adultos, a partir da perspectiva sistêmica e para além disso, muito do que norteia o meu fazer profissional hoje é acreditar numa ética afetuosa de enxergar as múltiplas formas de existência.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- espaço -->
+		<section id="pag-espaco">
+			<div class="container-1">
+				<div id="titulo-esp">
+					<h1 class="titulo-esp">
+						CONHEÇA NOSSO CANTINHO
+					</h1>
+				</div>
+
+				<!-- Ggrid para desktop -->
+				<div class="container-mural">
+					<div class="container">
+						<div class="grid-imagens">
+							<img src="img/espaco1.jpg" alt="Espaço 1">
+							<img src="img/espaco2.jpg" alt="Espaço 2">
+							<img src="img/espaco3.jpg" alt="Espaço 3">
+							<img src="img/espaco4.heic" alt="Espaço 4">
+							<img src="img/espaco5.heic" alt="Espaço 5">
+							<img src="img/espaco6.jpg" alt="Espaço 6">
+						</div>
+					</div>
+				</div>
+
+				<!-- carrossel para mobile -->
+				<div class="carousel">
+					<div class="carousel-container">
+						<img src="img/espaco1.JPG" alt="Foto 1">
+						<img src="img/espaco2.JPG" alt="Foto 2">
+						<img src="img/espaco3.JPG" alt="Foto 3">
+							<img src="img/espaco4.HEIC" alt="Foto 3">
+						<img src="img/espaco5.HEIC" alt="Foto 3">
+						<img src="img/espaco6.JPG" alt="Foto 3">
+					</div>
+
+					<button class="carousel-btn prev">&#10094;</button>
+					<button class="carousel-btn next">&#10095;</button>
+				</div>
+			</div>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+				const carousel = document.querySelector(".carousel");
+				if (!carousel) return;
+
+				const container = carousel.querySelector(".carousel-container");
+				const slides = carousel.querySelectorAll(".carousel-container img");
+				const prevBtn = carousel.querySelector(".carousel-btn.prev");
+				const nextBtn = carousel.querySelector(".carousel-btn.next");
+
+				let index = 0;
+				const total = slides.length;
+
+				// garante que cada slide ocupe 100% da largura
+				slides.forEach(slide => {
+					slide.style.flex = "0 0 100%";
+				});
+
+				function atualizarPosicao() {
+					const offset = -index * 100; // 0, -100, -200...
+					container.style.transform = `translateX(${offset}%)`;
+				}
+
+				function irParaSlide(novoIndex) {
+					index = (novoIndex + total) % total; // faz o loop (vai do último pro primeiro)
+					atualizarPosicao();
+				}
+
+				if (prevBtn) {
+					prevBtn.addEventListener("click", () => {
+					irParaSlide(index - 1);
+					});
+				}
+
+				if (nextBtn) {
+					nextBtn.addEventListener("click", () => {
+					irParaSlide(index + 1);
+					});
+				}
+
+				// opcional: troca automática a cada 5s
+				// setInterval(() => {
+				//   irParaSlide(index + 1);
+				// }, 5000);
+
+				// começa no primeiro
+				atualizarPosicao();
+				});
+			</script>
+		</section>
+
+		<!-- contato -->
+		<section id="contato">
+			<div id="contato-direita">
+				<div id="texto-contato">
+					<p id="titulo-contato">
+						CONTATE-NOS
+					</p>
+					<p>
+						Agende agora sua sessão e tire suas dúvidas conosco.
+					</p>
+					<br>
+					<p>
+						09h às 20h, SEG a SEX
+					</p>
+					<p>
+						Presencial e online
+					</p>
+					<br>
+				</div>
+
+				<div class="container-contato">
+					<a href="https://www.instagram.com/encontrospsicologia/" target="blank" id="lado-contato">
+						<img id="icone-contato" src="img/insta.png">
+						<p>
+							@encontrospsicologia
+						</p>
+					</a>
+				</div>
+
+				<br>
+
+				<div class="container-contato">
+					<a href="https://api.whatsapp.com/send/?phone=5561992954182" target="blank" id="lado-contato">
+						<img id="icone-contato" src="img/whatsapp.png">
+						<p>
+							+55 61 99295-4182
+						</p>
+					</a>
+				</div>
+
+				<br>
+
+				<p>
+					Ed Embassy Tower - SRTS<br>
+					Quadra 701 Bloco K Sala 303<br>
+					Asa Sul, Brasília
+				</p>
+			</div>
+		</section>
+
+		<!-- podcast-->
+		<section id="pag-podcast">
+			<div class="podcast-topo">
+				<h1>
+					ENCONTROS CAST
+				</h1>
+			</div>
+
+			<div class="podcast-grid">
+
+				<!-- COLUNA ESQUERDA -->
+				<div class="podcast-left">
+					<p id="left-title">
+						Conheça o podcast do Encontros.
+					</p>
+
+					<div class="left-carousel">
+						<button class="left-prev arrow-btn">&#8592;</button>
+						<img id="left-img" src="img/podcast1.png" alt="Podcast 1">
+						<button class="left-next arrow-btn">&#8594;</button>
+					</div>
+
+					<a id="left-link" href="https://exemplo-episodio1.com" target="_blank">
+						<button class="btn-podcast">
+							ACESSE O EPISÓDIO
+						</button>
+					</a>
+				</div>
+
+				<!-- COLUNA DIREITA -->
+				<div class="podcast-right">
+
+					<p class="podcast-info">
+						É necessário de uma conta, mas não se preocupe: criar uma conta gratuita é simples e rápido.
+					</p>
+
+					<!-- imagem + texto lado a lado -->
+					<div class="podcast-episodio">
+						<img id="img-pod" src="img/podcast-politico.jpg" alt="Capa do episódio Tudo é político">
+
+						<div class="podcast-texto">
+							<h2>
+								TUDO É POLÍTICO!
+							</h2>
+
+							<p>
+								Acho que você já ouviu por aí alguém dizer que tudo é político, né?
+								O que você entendeu sobre isso?
+								<br><br>
+								Gostaríamos muito que esse episódio atingisse além da nossa bolha e fosse parar
+								nos ouvidos de quem diz que odeia política. Então, bora compartilhar muito?
+								<br><br>
+								E se chegou em você, que odeia política, que tal nos dar uma chance e nos ouvir?
+							</p>
+
+							<a href="https://open.spotify.com/episode/3CHvb6qqTXP6rny6SRNnyU?si=b4b8055ba7964013" target="_blank" class="btn-podcast">
+								OUÇA O PODCAST
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				const leftPodcasts = [
+				{
+					title: "Conheça o podcast do Encontros",
+					img: "img/podcast1.png",
+					link: "https://open.spotify.com/episode/2FnDbRkZrXcWAOIAStoh2r?si=1ccbc391a5a744ba"
+				},
+				{
+					title: "Saúde Mental no Cotidiano",
+					img: "img/podcast2.png",
+					link: "https://open.spotify.com/episode/6msJ3jFeQA53f3IMseEarG?si=cdc04e84e7dc4566"
+				},
+				{
+					title: "Relacionamentos Saudáveis",
+					img: "img/podcast3.png",
+					link: "https://open.spotify.com/episode/1jJJiojdX3sW3TtlY2TPFu?si=dabbf0b0382640fe"
+				}
+				];
+
+				let leftIndex = 0;
+
+				// Atualiza os elementos do carrossel
+				function atualizarLeft() {
+				document.getElementById("left-title").textContent =
+					leftPodcasts[leftIndex].title;
+
+				document.getElementById("left-img").src =
+					leftPodcasts[leftIndex].img;
+
+				document.getElementById("left-link").href =
+					leftPodcasts[leftIndex].link;
+				}
+
+				// Animação suave de troca (fade)
+				function trocarComFade(novoIndex) {
+				const img = document.getElementById("left-img");
+
+				img.classList.add("fade-out"); // começa o fade-out
+
+				setTimeout(() => {
+					leftIndex = novoIndex;
+					atualizarLeft();
+
+					img.classList.remove("fade-out");
+					img.classList.add("fade-in"); // fade-in da nova imagem
+
+					setTimeout(() => img.classList.remove("fade-in"), 500);
+				}, 500);
+				}
+
+				// Botão voltar
+				document.querySelector(".left-prev").addEventListener("click", () => {
+				const novoIndex = (leftIndex - 1 + leftPodcasts.length) % leftPodcasts.length;
+				trocarComFade(novoIndex);
+				});
+
+				// Botão avançar
+				document.querySelector(".left-next").addEventListener("click", () => {
+				const novoIndex = (leftIndex + 1) % leftPodcasts.length;
+				trocarComFade(novoIndex);
+				});
+
+				// Troca automática a cada 4 segundos
+				setInterval(() => {
+				const novoIndex = (leftIndex + 1) % leftPodcasts.length;
+				trocarComFade(novoIndex);
+				}, 4000);
+
+				// Inicia com o primeiro
+				atualizarLeft();
+			</script>
+		</section>
+
+		<!-- depoimentos -->
+		<section id="pag-depoimentos">
+			<script src="https://static.elfsight.com/platform/platform.js" async>
+			</script>
+			<div class="elfsight-app-a162394d-9aed-4d0d-8ff2-e06fa7858c37" data-elfsight-app-lazy>
+			</div>
+		</section>
+
+		<!-- rodapé -->
+		<div class="rodape">
+			<div class="rodape-sobre">
+				<h3>
+					SOBRE
+				</h3>
+				<p>
+					Nosso propósito é democratizar o acesso à psicoterapia com uma visão crítica de sociedade.
+				</p>
+			</div>
+
+			<div id="menu-rodape">
+				<h3>MENU</h3>
+				<div>
+					<a class="menu" href="">Início</a>
+				</div>
+				<div>
+					<a class="menu" href="#pag-equipe">Equipe</a>
+				</div>
+				<div>
+					<a class="menu" href="#pag-espaco">Espaço</a>
+				</div>
+				<div>
+					<a class="menu" href="#pag-podcast">Podcast</a>
+				</div>
+				<div>
+					<a class="menu" href="#pag-depoimentos">Depoimentos</a>
+				</div>
+			</div>
+
+			<div class="rodape-redes">
+				<h3>REDES</h3>
+				<div class="container-icones">
+					<div>
+						<a href="https://www.instagram.com/encontrospsicologia/" target="_blank">
+							<img id="icone-rodape" src="img/insta.png" alt="Instagram">
+						</a>
+					</div>
+
+					<div>
+						<a href="https://open.spotify.com/show/1VGE7nQKSgc5UjqahQ6HP8?si=3f22448e35ff43e9" target="_blank">
+							<img id="icone-rodape" src="img/sptopo.png" alt="Spotify">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="rodape-contato">
+				<h3>CONTATO</h3>
+				<p>
+					<a href="https://api.whatsapp.com/send/?phone=5561992954182" target="_blank">+55 61 99295-4182</a>
+				</p>
+				<p>
+					09h às 20h, SEG a SEX
+				</p>
+			</div>
+
+			<div class="rodape-endereco">
+				<h3>ENDEREÇO</h3>
+				<div class="endereco-conteudo">
+					<div class="endereco-texto">
+						<p>Ed Embassy Tower - SRTS Quadra 701 Bloco K Sala 303 - Asa Sul</p>
+						<p>Brasília - DF, 70340-908</p>
+					</div>
+					<div class="mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.072258440922!2d-47.770943!3d-15.9052849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a21f5a1abfbc9%3A0x9fbce66cd77e5d37!2sEncontros%20Psicologia!5e0!3m2!1spt-BR!2sbr!4v1701100538964!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+		</footer>
+	</body>
+</html>
